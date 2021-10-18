@@ -15,6 +15,18 @@ registerApplication({
   activeWhen: ["/"]
 });
 
+registerApplication({
+  name: "@sofka-technologies/spa-demo-test-page",
+  app: () => System.import("@sofka-technologies/spa-demo-test-page"),
+  activeWhen: ["/"]
+});
+
+registerApplication({
+  name: "@sofka-technologies/spa-demo-home",
+  app: () => System.import("@sofka-technologies/spa-demo-home"),
+  activeWhen: ["/"]
+});
+
 
 start({
   urlRerouteOnly: true,
